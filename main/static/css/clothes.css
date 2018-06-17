@@ -1,0 +1,72 @@
+.page_first {
+    margin-top: 50px;
+}
+
+.row .card_clotch {
+    background: no-repeat center;
+    border: 3px solid black;
+    background-size: contain;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    height: 350px;
+    padding: 0;
+}
+
+.black {
+    height: 100%;
+    width: 100%;
+    border-radius: 23px;
+    z-index: 1;
+    position: absolute;
+}
+
+.card_clotch:hover .black {
+    background-color: black;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.buy_btn h4, .price h4 {
+    margin: 0;
+}
+
+.price {
+    background-color: white;
+    z-index: 3;
+    opacity: 1;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 3px solid black;
+
+    position: absolute;
+    top: 69%;
+    transform: translate(0, 100%);
+
+    display: none;
+}
+
+.buy_btn {
+    background-color: white;
+    z-index: 1;
+    opacity: 1;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 3px solid black;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.card_clotch:hover .buy_btn {
+    display: block;
+}
+
+.card_clotch:hover .price {
+    display: block;
+}

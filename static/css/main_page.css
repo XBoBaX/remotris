@@ -1,0 +1,11 @@
+.page_first{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textRight {
+    /*text-transform: uppercase;*/
+    transform: scaleX(-1);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
