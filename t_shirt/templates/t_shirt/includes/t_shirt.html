@@ -4,9 +4,9 @@
         <div class="col-12">
             <div class="row">
                 {% for ch in list %}
-                <div class="col-10 offset-1 col-lg-3 offset-lg-2 card_clotch" style="background-image: url('{{ BASE_DIR }}{{ ch.photo }}')">
+                <div onclick="window.open('{{ ch.adress }}')" class="col-10 offset-1 col-lg-3 offset-lg-2 card_clotch" style="background-image: url('{{ ch.photo.url }}')">
                     <div class="black"></div>
-                    <div class="buy_btn" align="center"><h4>КУПИТЬ {{ ch.photo }}</h4></div>
+                    <div class="buy_btn" align="center"><h4>КУПИТЬ</h4></div>
                     <div class="price" align="center"><h4>{{ ch.price }} руб</h4></div>
                 </div>
                 {% endfor %}

@@ -9,4 +9,4 @@ urlpatterns = [
     path('pullover', include('pullover.urls')),
     path('hoodie', include('hoodie.urls')),
     path('', include('main.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

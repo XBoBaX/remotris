@@ -30,12 +30,8 @@
 {% include "header/include/header.html" %}
 {% if page == "0" %}
     {% include "main/include/main.html" %}
-{% elif page == "1" %}
+{% elif page == "1" or page == "2" or page == "3" %}
     {% include "t_shirt/includes/t_shirt.html" %}
-{% elif page == "2" %}
-    {% include "pullover/include/pullover.html" %}
-{% elif page == "3" %}
-    {% include "hoodie/include/hoodie.html" %}
 {% endif %}
 
 <script src="{% static 'js/header.js' %}"></script>

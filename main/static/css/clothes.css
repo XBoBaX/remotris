@@ -43,7 +43,6 @@
     top: 69%;
     transform: translate(0, 100%);
 
-    display: none;
 }
 
 .buy_btn {
@@ -64,9 +63,5 @@
 }
 
 .card_clotch:hover .buy_btn {
-    display: block;
-}
-
-.card_clotch:hover .price {
     display: block;
 }
